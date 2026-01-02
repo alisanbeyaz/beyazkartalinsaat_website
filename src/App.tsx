@@ -19,7 +19,7 @@ import Studio from './pages/Studio';
 function App() {
   const location = useLocation();
   const isAdmin = location.pathname.startsWith('/admin');
-//admin kontrol
+//admin kontrol 
   if (isAdmin) {
     return (
       <Routes>
