@@ -7,6 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Beyaz Kartal Panel',
 
+  // Updated projectId for new Sanity account
   projectId: 'pan5xdly',
   dataset: 'production',
   basePath: '/admin',
