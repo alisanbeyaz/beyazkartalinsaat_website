@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Beyaz Kartal Panel',
 
-  projectId: 'qlhrekto',
+  projectId: 'pan5xdly',
   dataset: 'production',
   basePath: '/admin',
 
