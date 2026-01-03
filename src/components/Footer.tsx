@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="block text-white font-medium mb-1">Adres</span>
-                  <span className="text-silver text-sm">Büyükdere Cad. No:123<br />Şişli, İstanbul</span>
+                  <span className="text-silver text-sm">Atatürk Mah. Ertuğrul Gazi Sk. Metropol İstanbul C1 BLOK NO: 2B İÇ KAPI NO: 101 ATAŞEHİR/İSTANBUL</span>
                 </div>
               </li>
               <li className="flex items-start gap-4 group">
@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="block text-white font-medium mb-1">E-posta</span>
-                  <span className="text-silver text-sm">info@beyazkartal.com.tr</span>
+                  <span className="text-silver text-sm">destek@beyazkartalinsaat.com</span>
                 </div>
               </li>
             </ul>

@@ -48,7 +48,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">Adres</p>
-                      <p className="text-slate-600">Büyükdere Cad. No:123<br/>Şişli, İstanbul</p>
+                      <p className="text-slate-600">Atatürk Mah. Ertuğrul Gazi Sk. Metropol İstanbul C1 BLOK NO: 2B İÇ KAPI NO: 101 ATAŞEHİR/İSTANBUL</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -66,7 +66,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">E-posta</p>
-                      <p className="text-slate-600">info@beyazkartal.com.tr</p>
+                      <p className="text-slate-600">destek@beyazkartalinsaat.com</p>
                     </div>
                   </div>
                 </div>
