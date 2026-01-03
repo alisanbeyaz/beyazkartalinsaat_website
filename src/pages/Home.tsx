@@ -55,7 +55,7 @@ const Home = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-white space-y-8">
           <Reveal width="100%">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-normal font-serif py-4">
-              Geleceği <span className="text-primary italic">İnşa Ediyoruz</span>
+              Geleceği <span className="text-blue-400 italic">İnşa Ediyoruz</span>
             </h1>
           </Reveal>
           

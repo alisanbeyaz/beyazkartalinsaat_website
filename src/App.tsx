@@ -6,9 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import News from './pages/News';
 import Contact from './pages/Contact';
-import ChairmanMessage from './pages/ChairmanMessage';
 import Board from './pages/Board';
-import SocialResponsibility from './pages/SocialResponsibility';
 import Kvkk from './pages/Kvkk';
 
 import JobApplication from './pages/JobApplication';
@@ -37,9 +35,7 @@ function App() {
           {/* Kurumsal Routes */}
           <Route path="/kurumsal" element={<About />} />
           <Route path="/kurumsal/hakkimizda" element={<About />} />
-          <Route path="/kurumsal/baskanin-mesaji" element={<ChairmanMessage />} />
           <Route path="/kurumsal/yonetim-kurulu" element={<Board />} />
-          <Route path="/kurumsal/sosyal-sorumluluk" element={<SocialResponsibility />} />
           <Route path="/kurumsal/kvkk" element={<Kvkk />} />
 
           {/* Project Routes */}

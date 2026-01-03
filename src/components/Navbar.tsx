@@ -32,9 +32,7 @@ const Navbar = () => {
       path: '/kurumsal',
       submenu: [
         { name: 'Hakkımızda', path: '/kurumsal/hakkimizda' },
-        { name: 'Başkan’ın Mesajı', path: '/kurumsal/baskanin-mesaji' },
         { name: 'Yönetim Kurulu', path: '/kurumsal/yonetim-kurulu' },
-        { name: 'Sosyal Sorumluluk', path: '/kurumsal/sosyal-sorumluluk' },
         { name: 'Kişisel Verilerin Korunması', path: '/kurumsal/kvkk' },
       ]
     },
