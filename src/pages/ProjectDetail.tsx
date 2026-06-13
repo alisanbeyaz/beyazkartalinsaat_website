@@ -6,9 +6,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { getProject } from '../lib/sanityQueries';
 import type { SanityProject } from '../lib/sanityQueries';
 import { urlFor } from '../sanity/client';
+import ProjectMap from '../components/ProjectMap';
 
 const ProjectDetail = () => {
-  const { id } = useParams(); // 'id' here corresponds to the slug in the route /projeler/:id
+  const { id } = useParams();
   const navigate = useNavigate();
   const [project, setProject] = useState<SanityProject | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -108,7 +109,6 @@ const ProjectDetail = () => {
             {/* Left Column: Description & Gallery */}
             <div className="lg:col-span-2 space-y-8">
               
-              {/* Description Card */}
               <div className="bg-white rounded-2xl p-8 shadow-sm">
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">Proje Hakkında</h2>
                 <p className="text-slate-600 leading-relaxed text-lg whitespace-pre-wrap">
@@ -116,7 +116,6 @@ const ProjectDetail = () => {
                 </p>
               </div>
 
-              {/* Gallery */}
               {galleryImages.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-bold text-slate-900 mb-6">Galeri</h2>
@@ -251,7 +250,12 @@ const ProjectDetail = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
+        
+      
+        <div className="container mx-auto px-4 mt-12">
+          <ProjectMap activeProjectSlug={id} />
+        </div>
+        
       </div>
     </PageTransition>
   );

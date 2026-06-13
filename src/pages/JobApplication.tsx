@@ -4,7 +4,7 @@ import { Upload, Send } from 'lucide-react';
 const JobApplication = () => {
   return (
     <PageTransition>
-      <div className="pt-24 pb-20 bg-slate-50 min-h-screen">
+      <div className="mt-10 pt-24 pb-20 bg-slate-50 min-h-screen">
         <div className="container mx-auto px-4 max-w-4xl">
           
           <div className="text-center mb-12">

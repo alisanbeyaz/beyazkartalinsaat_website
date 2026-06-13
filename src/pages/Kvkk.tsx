@@ -4,7 +4,7 @@ import { FileText } from 'lucide-react';
 const Kvkk = () => {
   return (
     <PageTransition>
-      <div className="pt-24 pb-20 bg-white min-h-screen">
+      <div className="mt-10 pt-24 pb-20 bg-white min-h-screen">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-4 mb-8 pb-8 border-b border-slate-200">
              <div className="bg-primary/10 p-4 rounded-xl">

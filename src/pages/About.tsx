@@ -5,7 +5,7 @@ const About = () => {
   return (
     <PageTransition>
       {/* Hero Section */}
-      <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <div className="mt-20 relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-slate-900">
            <div className="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center" />
         </div>

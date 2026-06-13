@@ -1,16 +1,17 @@
 import { PageTransition } from '../components/Layout';
 
 const Board = () => {
+  
   const members = [
     { name: "Necdet Beyaz", title: "Yönetim Kurulu Başkanı" },
-    { name: "Muhammed Kartal", title: "Yönetim Kurulu Başkan Yardımcısı" },
+    { name: "Muhammed Kartal", title: "Yönetim Kurulu Başkanı" },
     { name: "Alişan Beyaz", title: "Yönetim Kurulu Üyesi" },
     { name: "Emirhan Beyaz", title: "Yönetim Kurulu Üyesi" },
   ];
 
   return (
     <PageTransition>
-       <div className="pt-32 pb-20 bg-slate-50 min-h-screen">
+       <div className="mt-10 pt-32 pb-20 bg-slate-50 min-h-screen">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Yönetim Kurulu</h1>

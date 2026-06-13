@@ -1,144 +1,95 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/Layout';
-import { ArrowRight, MapPin } from 'lucide-react';
-import { cn } from '../lib/utils';
-import { getProjects } from '../lib/sanityQueries';
-import type { SanityProject } from '../lib/sanityQueries';
-import { urlFor } from '../sanity/client';
+import { Globe, ArrowRight } from 'lucide-react';
+import ProjectMap from '../components/ProjectMap';
+
+const myProjects = [
+  { _id: "1", title: "Kırk Konaklar Tarabya", location: "Tarabya, İstanbul", status: "tamamlanan", description: "Modern mimarisi ve doğayla iç içe yapısıyla Kırk Konaklar.", image: "/src/projects/kirk-konak-tarabya.jpg", slug: "kirk-konaklar-tarabya" },
+  { _id: "2", title: "Ihlamur Konakları Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın kalbinde, deniz havasıyla ferahlayan özel tasarım yaşam alanları.", image: "/src/projects/florya-ihlamur-konaklari.jpg", slug: "ihlamur-konaklari-florya" },
+  { _id: "3", title: "Gayrettepe 53", location: "Gayrettepe, İstanbul", status: "tamamlanan", description: "Şehrin merkezinde iş ve yaşam dinamiklerini birleştiren prestijli projemiz.", image: "/src/projects/53.jpg", slug: "53" },
+  { _id: "4", title: "Beyaz Park Gümüşsuyu", location: "Gümüşsuyu, İstanbul", status: "tamamlanan", description: "Tarihi dokuya saygılı, boğaz manzaralı butik ve eşsiz bir yaşam projesi.", image: "/src/projects/beyazpark-gümüssuyu.jpg", slug: "beyazpark-gumussuyu" },
+  { _id: "5", title: "Merkezefendi Konakları", location: "Zeytinburnu, İstanbul", status: "tamamlanan", description: "Geleneksel aile yaşamına uygun, geniş yeşil alanlara sahip huzurlu konaklar.", image: "/src/projects/merkez-efendi-konaklari.jpg", slug: "merkezefendi-konaklari" },
+  { _id: "6", title: "Beyaz Plaza Beykent", location: "Beykent, İstanbul", status: "tamamlanan", description: "Bölgenin yeni ticari kalbi olan modern ve donanımlı iş merkezi projemiz.", image: "/src/projects/beyazplaza-beykent.jpg", slug: "beyazplaza-beykent" },
+  { _id: "7", title: "Mara Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın prestijine yakışır, ultra lüks detaylarla donatılmış özel yaşam alanı.", image: "/src/projects/mara-florya.jpg", slug: "mara-florya" },
+  { _id: "8", title: "AURELIA Büyükçekmece", location: "Büyükçekmece, İstanbul", status: "devam-eden", description: "Modern mimariyle tasarlanmış, doğa ile iç içe lüks villa projesi.", image: "/projects/Büyükcekmece.png", slug: "buyukcekmece-villa" }
+];
 
 const Projects = () => {
-  const [filter, setFilter] = useState<'all' | 'tamamlanan' | 'devam-eden'>('all');
-  const [projects, setProjects] = useState<SanityProject[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [projects] = useState(myProjects);
 
   useEffect(() => {
-    // Fetch projects from Sanity
-    getProjects()
-      .then((data) => {
-        setProjects(data);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error fetching projects:", err);
-        setIsLoading(false);
-      });
+    window.scrollTo(0, 0);
   }, []);
-
-  // Check URL params for initial filter
-  useEffect(() => {
-    const path = window.location.pathname;
-    if (path.includes('/tamamlanan')) setFilter('tamamlanan');
-    else if (path.includes('/devam-eden')) setFilter('devam-eden');
-    else setFilter('all');
-  }, [window.location.pathname]);
-
-  const filteredProjects = projects.filter(project => 
-    filter === 'all' ? true : project.status === filter
-  );
 
   return (
     <PageTransition>
-      <div className="pt-24 pb-12 bg-slate-50 min-h-screen">
-        <div className="container mx-auto px-4">
+      <div className="pt-32 pb-20 bg-white min-h-screen">
+        <div className="container mx-auto px-4 max-w-7xl">
           
-          <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-            <h1 className="text-4xl font-bold text-slate-900">Projelerimiz</h1>
-            
-            {/* Filter Buttons */}
-            <div className="flex bg-white p-1 rounded-lg shadow-sm border border-slate-200">
-              <button 
-                onClick={() => setFilter('all')}
-                className={cn(
-                  "px-6 py-2 rounded-md text-sm font-medium transition-all",
-                  filter === 'all' ? "bg-slate-900 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
-                )}
-              >
-                Tümü
-              </button>
-              <button 
-                onClick={() => setFilter('devam-eden')}
-                className={cn(
-                  "px-6 py-2 rounded-md text-sm font-medium transition-all",
-                  filter === 'devam-eden' ? "bg-slate-900 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
-                )}
-              >
-                Devam Eden
-              </button>
-              <button 
-                onClick={() => setFilter('tamamlanan')}
-                className={cn(
-                  "px-6 py-2 rounded-md text-sm font-medium transition-all",
-                  filter === 'tamamlanan' ? "bg-slate-900 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
-                )}
-              >
-                Tamamlanan
-              </button>
-            </div>
+          {/* BAŞLIK BÖLÜMÜ */}
+          <div className="mb-16 border-b border-slate-200 pb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">PROJELERİMİZ</h1>
+            <div className="w-16 h-1 bg-slate-900 mb-6"></div>
           </div>
 
-          {isLoading ? (
-            <div className="flex justify-center items-center py-20">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-navy-900"></div>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProjects.map((project) => (
-                 <Link 
-                   to={`/projeler/${project.slug.current}`} 
-                   key={project._id} 
-                   className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full"
-                 >
-                   <div className="aspect-[4/3] overflow-hidden relative">
-                     <div 
-                       className="w-full h-full bg-slate-200 transition-transform duration-700 group-hover:scale-110 bg-cover bg-center" 
-                       style={{backgroundImage: `url('${urlFor(project.mainImage).url()}')`}} 
-                     />
-                     <div className="absolute top-4 left-4">
-                        <span className={cn(
-                          "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm",
-                          project.status === 'devam-eden' ? "bg-amber-100 text-amber-700" : "bg-green-100 text-green-700"
-                        )}>
-                          {project.status === 'devam-eden' ? 'Devam Ediyor' : 'Tamamlandı'}
-                        </span>
-                     </div>
-                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
-                   </div>
-                   
-                   <div className="p-6 flex flex-col flex-grow">
-                     {project.location && (
-                       <div className="flex items-center text-slate-500 text-sm mb-3">
-                         <MapPin size={14} className="mr-1" />
-                         {project.location}
-                       </div>
-                     )}
-                     <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
-                       {project.title}
-                     </h3>
-                     <p className="text-slate-600 line-clamp-3 mb-6 text-sm flex-grow">
-                       {project.description}
-                     </p>
-                     
-                     <div className="pt-4 border-t border-slate-100 flex justify-between items-center text-primary font-medium text-sm">
-                       <span>Detayları İncele</span>
-                       <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
-                     </div>
-                   </div>
-                 </Link>
-              ))}
-            </div>
-          )}
-          
-          {!isLoading && filteredProjects.length === 0 && (
-             <div className="text-center py-20">
-                <p className="text-slate-500 text-lg">Bu kategoride henüz proje bulunmamaktadır.</p>
-             </div>
-          )}
+          {/* PROJE GRID VE HARİTA */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {projects.map((project) => (
+              <Link
+                to={`/projeler/${project.slug}`}
+                key={project._id}
+                className="group relative h-[500px] bg-slate-900 border border-slate-200 hover:border-slate-900 overflow-hidden block shadow-md hover:shadow-xl transition-all duration-500"
+              >
+                <div className="absolute inset-0 z-0">
+                  <div
+                    className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                    style={{ backgroundImage: `url('${project.image}')` }} 
+                  />
+                  <div className="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition-colors duration-700 z-10" />
+                </div>
+                
+                <div className="absolute top-0 left-0 z-20">
+                  <span className={"inline-block px-4 py-2 text-[10px] font-bold uppercase tracking-widest " + 
+                    (project.status === 'devam-eden' ? "bg-amber-500/50 text-white" : "bg-white/40 text-slate-900")}>
+                    {project.status === 'devam-eden' ? 'Devam Ediyor' : 'Tamamlandı'}
+                  </span>
+                </div>
 
+                <div className="absolute inset-0 flex items-center justify-center z-30 opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
+                  <span className="bg-white/90 text-slate-900 px-6 py-3 text-[11px] font-bold uppercase tracking-widest flex items-center gap-2 shadow-xl">
+                    Projeyi İncele <ArrowRight size={14} />
+                  </span>
+                </div>
+
+                <div className="absolute bottom-0 left-0 right-0 bg-white/40 p-6 z-20 transition-all duration-500 group-hover:translate-y-full group-hover:opacity-0">
+                  <div className="text-[11px] font-bold text-slate-900 uppercase tracking-widest mb-2">{project.location}</div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 leading-tight line-clamp-1">{project.title}</h3>
+                  <p className="text-slate-900 font-medium text-sm leading-relaxed line-clamp-2">{project.description}</p>
+                </div>
+              </Link>
+            ))}
+
+            {/* HARİTA BÖLÜMÜ (TAM GENİŞLİK) */}
+            <div className="lg:col-span-3 md:col-span-2 relative h-[500px] w-full border border-slate-200 shadow-md mt-8">
+              <div className="absolute top-0 right-0 z-[400]">
+                <div className="bg-slate-900 px-4 py-2 flex items-center gap-2">
+                  <Globe size={14} className="text-white" />
+                  <span className="text-[10px] font-bold text-white uppercase tracking-widest">Tüm Projeler Haritası</span>
+                </div>
+              </div>
+              
+              <div className="absolute inset-0 w-full h-full z-0">
+                <ProjectMap category="all" />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </PageTransition>
   );
 };
 
-export default Projects;
+export default Projects;  
