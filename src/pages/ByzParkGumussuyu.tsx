@@ -11,7 +11,7 @@ const BeyazParkGumussuyu: React.FC = () => {
     title: "Beyaz Park Gümüşsuyu",
     location: "Gümüşsuyu, İstanbul",
     status: "Tamamlandı",
-    mainImage: "/src/projects/beyazpark-gümüssuyu.jpg",
+    mainImage: "/projects/beyazpark-gümüssuyu.jpg",
     description: "Beyaz Park Gümüşsuyu, 54 konut ve 11 ticari üniteden oluşan, modern yaşamın tüm gereksinimlerini tek bir noktada birleştiren prestijli bir projedir. Projenin kaba inşaat sürecinde; yoğun yerleşim ihtiyacını güvenle taşıyacak statik çözümler ve ileri betonarme teknikleri geliştirdik. Depreme dayanıklı taşıyıcı sistemlerden, yapısal sağlamlığın her aşamasına kadar titizlikle yürüttüğümüz çalışmalarla, sıcak aile yuvalarına ve ticari alanlara güven veren bir iskelet yapısı kazandırdık. Kaliteyi ve güvenliği temel ilke edinerek, projenin yapısal bütünlüğüne imzamızı attık.",
     stats: [
       { label: "Blok Sayısı", value: "1 Blok", icon: Building },

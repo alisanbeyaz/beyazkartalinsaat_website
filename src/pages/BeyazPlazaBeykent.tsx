@@ -11,7 +11,7 @@ const BeyazPlazaBeykent: React.FC = () => {
     title: "Beyaz Plaza Beykent",
     location: "Beykent, İstanbul",
     status: "Tamamlandı",
-    mainImage: "/src/projects/beyazplaza-beykent.jpg",
+    mainImage: "/projects/beyazplaza-beykent.jpg",
     description: "Beyaz Plaza Beykent, 45 modern konut ve 7 ticari üniteden oluşan, bölgenin dinamik yapısına değer katan prestijli bir yaşam ve iş merkezidir. Projenin mimari vizyonunu taşıyıcı sistemle bütünleştirdiğimiz kaba inşaat sürecinde; yüksek mukavemetli yapı teknolojileri ve ileri mühendislik hesaplamaları kullanılmıştır. Modern yaşam alanlarını ve ticari hacimleri güvenle bir araya getiren bu yapının statik çözümlemesinde, depreme dayanıklılık ve yapısal bütünlük en üst seviyede tutulmuştur. Kaliteden ödün vermeyen disiplinli çalışma anlayışımızla, Beyaz Plaza Beykent’in her katına sağlam, uzun ömürlü ve güven veren bir iskelet yapısı kazandırdık.",
     stats: [
       { label: "Blok Sayısı", value: "1 Blok", icon: Building },

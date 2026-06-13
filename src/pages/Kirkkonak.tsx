@@ -11,7 +11,7 @@ const Kirkkonak: React.FC = () => {
     title: "Kırkkonaklar Tarabya",
     location: "Tarabya, İstanbul",
     status: "Tamamlandı",
-    mainImage: "/src/projects/kirk-konak-tarabya.jpg",
+    mainImage: "/projects/kirk-konak-tarabya.jpg",
     description: "10.680 m² arsa üzerinde yükselen bu prestijli proje, 8 blok ve 40 seçkin daireden oluşan modern bir yaşam alanı sunuyor. Projenin yapısal bütünlüğünü ve güvenliğini merkezine alan firmamız; kaba inşaat sürecinde en güncel mühendislik tekniklerini ve yüksek mukavemetli yapı malzemelerini kullanmıştır. Estetik detayların ötesinde, uzun ömürlü ve depreme dayanıklı bir temel atma sorumluluğuyla hareket ederek, projenin modern mimari çizgisine sağlam bir iskelet kazandırdık.",
     stats: [
       { label: "Arsa Alanı", value: "10.680 m²", icon: Ruler }, 

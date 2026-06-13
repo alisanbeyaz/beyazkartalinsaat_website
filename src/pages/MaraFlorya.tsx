@@ -11,7 +11,7 @@ const MaraFlorya: React.FC = () => {
     title: "Mara Florya",
     location: "Florya, İstanbul",
     status: "Tamamlandı",
-    mainImage: "/src/projects/mara-florya.jpg",
+    mainImage: "/projects/mara-florya.jpg",
     description: "Florya’nın prestijli lokasyonunda konumlanan Mara Florya, modern iş dünyasının gereksinimlerine yanıt veren özgün bir ofis projesidir. Projenin mimari vizyonunu taşıyıcı sistemle bütünleştirdiğimiz kaba inşaat sürecinde; yüksek mukavemetli yapı teknolojileri ve ileri mühendislik hesaplamaları kullanılmıştır. Modern çalışma alanlarını güvenle bir araya getiren bu yapının statik çözümlemesinde, depreme dayanıklılık ve yapısal bütünlük en üst seviyede tutulmuştur. Kaliteden ödün vermeyen disiplinli çalışma anlayışımızla, Mara Florya’nın her katına sağlam, uzun ömürlü ve güven veren bir iskelet yapısı kazandırdık.",
     stats: [
       { label: "Konut Tipi", value: "Ofis", icon: Building },

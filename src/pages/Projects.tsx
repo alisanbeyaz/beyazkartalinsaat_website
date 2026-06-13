@@ -5,13 +5,13 @@ import { Globe, ArrowRight } from 'lucide-react';
 import ProjectMap from '../components/ProjectMap';
 
 const myProjects = [
-  { _id: "1", title: "Kırk Konaklar Tarabya", location: "Tarabya, İstanbul", status: "tamamlanan", description: "Modern mimarisi ve doğayla iç içe yapısıyla Kırk Konaklar.", image: "/src/projects/kirk-konak-tarabya.jpg", slug: "kirk-konaklar-tarabya" },
-  { _id: "2", title: "Ihlamur Konakları Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın kalbinde, deniz havasıyla ferahlayan özel tasarım yaşam alanları.", image: "/src/projects/florya-ihlamur-konaklari.jpg", slug: "ihlamur-konaklari-florya" },
-  { _id: "3", title: "Gayrettepe 53", location: "Gayrettepe, İstanbul", status: "tamamlanan", description: "Şehrin merkezinde iş ve yaşam dinamiklerini birleştiren prestijli projemiz.", image: "/src/projects/53.jpg", slug: "53" },
-  { _id: "4", title: "Beyaz Park Gümüşsuyu", location: "Gümüşsuyu, İstanbul", status: "tamamlanan", description: "Tarihi dokuya saygılı, boğaz manzaralı butik ve eşsiz bir yaşam projesi.", image: "/src/projects/beyazpark-gümüssuyu.jpg", slug: "beyazpark-gumussuyu" },
-  { _id: "5", title: "Merkezefendi Konakları", location: "Zeytinburnu, İstanbul", status: "tamamlanan", description: "Geleneksel aile yaşamına uygun, geniş yeşil alanlara sahip huzurlu konaklar.", image: "/src/projects/merkez-efendi-konaklari.jpg", slug: "merkezefendi-konaklari" },
-  { _id: "6", title: "Beyaz Plaza Beykent", location: "Beykent, İstanbul", status: "tamamlanan", description: "Bölgenin yeni ticari kalbi olan modern ve donanımlı iş merkezi projemiz.", image: "/src/projects/beyazplaza-beykent.jpg", slug: "beyazplaza-beykent" },
-  { _id: "7", title: "Mara Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın prestijine yakışır, ultra lüks detaylarla donatılmış özel yaşam alanı.", image: "/src/projects/mara-florya.jpg", slug: "mara-florya" },
+  { _id: "1", title: "Kırk Konaklar Tarabya", location: "Tarabya, İstanbul", status: "tamamlanan", description: "Modern mimarisi ve doğayla iç içe yapısıyla Kırk Konaklar.", image: "/projects/kirk-konak-tarabya.jpg", slug: "kirk-konaklar-tarabya" },
+  { _id: "2", title: "Ihlamur Konakları Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın kalbinde, deniz havasıyla ferahlayan özel tasarım yaşam alanları.", image: "/projects/florya-ihlamur-konaklari.jpg", slug: "ihlamur-konaklari-florya" },
+  { _id: "3", title: "Gayrettepe 53", location: "Gayrettepe, İstanbul", status: "tamamlanan", description: "Şehrin merkezinde iş ve yaşam dinamiklerini birleştiren prestijli projemiz.", image: "/projects/53.jpg", slug: "53" },
+  { _id: "4", title: "Beyaz Park Gümüşsuyu", location: "Gümüşsuyu, İstanbul", status: "tamamlanan", description: "Tarihi dokuya saygılı, boğaz manzaralı butik ve eşsiz bir yaşam projesi.", image: "/projects/beyazpark-gümüssuyu.jpg", slug: "beyazpark-gumussuyu" },
+  { _id: "5", title: "Merkezefendi Konakları", location: "Zeytinburnu, İstanbul", status: "tamamlanan", description: "Geleneksel aile yaşamına uygun, geniş yeşil alanlara sahip huzurlu konaklar.", image: "/projects/merkez-efendi-konaklari.jpg", slug: "merkezefendi-konaklari" },
+  { _id: "6", title: "Beyaz Plaza Beykent", location: "Beykent, İstanbul", status: "tamamlanan", description: "Bölgenin yeni ticari kalbi olan modern ve donanımlı iş merkezi projemiz.", image: "/projects/beyazplaza-beykent.jpg", slug: "beyazplaza-beykent" },
+  { _id: "7", title: "Mara Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın prestijine yakışır, ultra lüks detaylarla donatılmış özel yaşam alanı.", image: "/projects/mara-florya.jpg", slug: "mara-florya" },
   { _id: "8", title: "AURELIA Büyükçekmece", location: "Büyükçekmece, İstanbul", status: "devam-eden", description: "Modern mimariyle tasarlanmış, doğa ile iç içe lüks villa projesi.", image: "/projects/Büyükcekmece.png", slug: "buyukcekmece-villa" }
 ];
 

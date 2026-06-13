@@ -11,7 +11,7 @@ const Gayrettepe53: React.FC = () => {
     title: "Gayrettepe 53",
     location: "Gayrettepe, İstanbul",
     status: "Tamamlandı",
-    mainImage: "/src/projects/53.jpg",
+    mainImage: "/projects/53.jpg",
     description: "Gayrettepe 53, şehrin merkezinde prestijli bir yaşam ve iş alanı konseptiyle tasarlanmış, çok yönlü bir mimari projedir. 1 dükkan, 1 ofis ve 41 özel daireden oluşan bu proje, Gayrettepe’nin dinamik dokusuna uyum sağlayan modern bir yaşam merkezi sunuyor. Kaba inşaat sürecinde, projenin çok katmanlı yapısının gerektirdiği ileri mühendislik standartlarını uyguladık. Depreme dayanıklı taşıyıcı sistem tasarımı ve yüksek mukavemetli yapı teknikleri ile projenin yapısal bütünlüğünü sağladık. Modern yaşamın gereksinimlerini karşılayan bu yapının temellerinde, uzman mühendislik imzamızın getirdiği kalite ve güvenliği yansıttık.",
     stats: [
         { label: "Blok Sayısı", value: "1 Blok", icon: Building },
