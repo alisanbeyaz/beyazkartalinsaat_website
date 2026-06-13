@@ -73,16 +73,11 @@ const Projects = () => {
 
             {/* HARİTA BÖLÜMÜ (TAM GENİŞLİK) */}
             <div className="lg:col-span-3 md:col-span-2 relative h-[500px] w-full border border-slate-200 shadow-md mt-8">
-              <div className="absolute top-0 right-0 z-[400]">
-                <div className="bg-slate-900 px-4 py-2 flex items-center gap-2">
-                  <Globe size={14} className="text-white" />
-                  <span className="text-[10px] font-bold text-white uppercase tracking-widest">Tüm Projeler Haritası</span>
-                </div>
-              </div>
               
               <div className="absolute inset-0 w-full h-full z-0">
                 <ProjectMap category="all" />
               </div>
+              
             </div>
 
           </div>

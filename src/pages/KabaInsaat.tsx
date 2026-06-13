@@ -7,13 +7,13 @@ import ProjectMap from '../components/ProjectMap';
 const KabaInsaat = () => {
   // Tüm projeler listesi
   const allProjects = [
-    { _id: "1", title: "Kırk Konaklar Tarabya", location: "Tarabya, İstanbul", status: "tamamlanan", description: "Modern mimarisi ve doğayla iç içe yapısıyla Kırk Konaklar.", image: "/src/projects/kirk-konak-tarabya.jpg", slug: "kirk-konaklar-tarabya" },
-    { _id: "2", title: "Ihlamur Konakları Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın kalbinde, deniz havasıyla ferahlayan özel tasarım yaşam alanları.", image: "/src/projects/florya-ihlamur-konaklari.jpg", slug: "ihlamur-konaklari-florya" },
-    { _id: "3", title: "Gayrettepe 53", location: "Gayrettepe, İstanbul", status: "tamamlanan", description: "Şehrin merkezinde iş ve yaşam dinamiklerini birleştiren prestijli projemiz.", image: "/src/projects/53.jpg", slug: "53" },
-    { _id: "4", title: "Beyaz Park Gümüşsuyu", location: "Gümüşsuyu, İstanbul", status: "tamamlanan", description: "Tarihi dokuya saygılı, boğaz manzaralı butik ve eşsiz bir yaşam projesi.", image: "/src/projects/beyazpark-gümüssuyu.jpg", slug: "beyazpark-gumussuyu" },
-    { _id: "5", title: "Merkezefendi Konakları", location: "Zeytinburnu, İstanbul", status: "tamamlanan", description: "Geleneksel aile yaşamına uygun, geniş yeşil alanlara sahip huzurlu konaklar.", image: "/src/projects/merkez-efendi-konaklari.jpg", slug: "merkezefendi-konaklari" },
-    { _id: "6", title: "Beyaz Plaza Beykent", location: "Beykent, İstanbul", status: "tamamlanan", description: "Bölgenin yeni ticari kalbi olan modern ve donanımlı iş merkezi projemiz.", image: "/src/projects/beyazplaza-beykent.jpg", slug: "beyazplaza-beykent" },
-    { _id: "7", title: "Mara Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın prestijine yakışır, ultra lüks detaylarla donatılmış özel yaşam alanı.", image: "/src/projects/mara-florya.jpg", slug: "mara-florya" }
+    { _id: "1", title: "Kırk Konaklar Tarabya", location: "Tarabya, İstanbul", status: "tamamlanan", description: "Modern mimarisi ve doğayla iç içe yapısıyla Kırk Konaklar.", image: "/projects/kirk-konak-tarabya.jpg", slug: "kirk-konaklar-tarabya" },
+    { _id: "2", title: "Ihlamur Konakları Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın kalbinde, deniz havasıyla ferahlayan özel tasarım yaşam alanları.", image: "/projects/florya-ihlamur-konaklari.jpg", slug: "ihlamur-konaklari-florya" },
+    { _id: "3", title: "Gayrettepe 53", location: "Gayrettepe, İstanbul", status: "tamamlanan", description: "Şehrin merkezinde iş ve yaşam dinamiklerini birleştiren prestijli projemiz.", image: "/projects/53.jpg", slug: "53" },
+    { _id: "4", title: "Beyaz Park Gümüşsuyu", location: "Gümüşsuyu, İstanbul", status: "tamamlanan", description: "Tarihi dokuya saygılı, boğaz manzaralı butik ve eşsiz bir yaşam projesi.", image: "/projects/beyazpark-gümüssuyu.jpg", slug: "beyazpark-gumussuyu" },
+    { _id: "5", title: "Merkezefendi Konakları", location: "Zeytinburnu, İstanbul", status: "tamamlanan", description: "Geleneksel aile yaşamına uygun, geniş yeşil alanlara sahip huzurlu konaklar.", image: "/projects/merkez-efendi-konaklari.jpg", slug: "merkezefendi-konaklari" },
+    { _id: "6", title: "Beyaz Plaza Beykent", location: "Beykent, İstanbul", status: "tamamlanan", description: "Bölgenin yeni ticari kalbi olan modern ve donanımlı iş merkezi projemiz.", image: "/projects/beyazplaza-beykent.jpg", slug: "beyazplaza-beykent" },
+    { _id: "7", title: "Mara Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın prestijine yakışır, ultra lüks detaylarla donatılmış özel yaşam alanı.", image: "/projects/mara-florya.jpg", slug: "mara-florya" }
   ];
 
   useEffect(() => {
@@ -68,10 +68,6 @@ const KabaInsaat = () => {
 
             {/* HARİTA BÖLÜMÜ: Sadece Kaba İnşaat için */}
             <div className="lg:col-span-2 md:col-span-1 relative h-[500px] w-full border border-slate-200 shadow-md">
-              <div className="absolute top-0 right-0 z-[400] bg-slate-900 px-4 py-2 flex items-center gap-2">
-                <Globe size={14} className="text-white" />
-                <span className="text-[10px] font-bold text-white uppercase tracking-widest">Harita Görünümü</span>
-              </div>
               <div className="absolute inset-0 w-full h-full z-0">
                 <ProjectMap category="kaba-insaat" />
               </div>
