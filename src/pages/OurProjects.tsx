@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/Layout';
-import { Globe, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ProjectMap from '../components/ProjectMap';
 
 const OurProjects = () => {
