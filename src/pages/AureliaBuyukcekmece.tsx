@@ -32,7 +32,7 @@ const AureliaBuyukcekmece: React.FC = () => {
       "/projects/Büyükcekmece4.jpeg"
     ],
     coordinates: [41.0260, 28.6000] as [number, number],
-    logo: "../assets/beyazkartallogo_reverse.png" 
+    logo: "/beyazkartallogo_reverse.png" 
   };
 
   useEffect(() => {
