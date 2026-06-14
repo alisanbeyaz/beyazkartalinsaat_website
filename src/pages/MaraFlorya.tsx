@@ -16,7 +16,7 @@ const MaraFlorya: React.FC = () => {
     stats: [
       { label: "Konut Tipi", value: "Ofis", icon: Building },
       { label: "Daire Sayısı", value: "-", icon: Home },
-      { label: "Arsa Alanı", value: "-", icon: Ruler }
+      { label: "İnşaat Alanı", value: "-", icon: Ruler }
     ],
     coordinates: [40.987594170020564, 28.79530760402052] as [number, number]
   };

@@ -14,7 +14,7 @@ const Kirkkonak: React.FC = () => {
     mainImage: "/projects/kirk-konak-tarabya.jpg",
     description: "10.680 m² arsa üzerinde yükselen bu prestijli proje, 8 blok ve 40 seçkin daireden oluşan modern bir yaşam alanı sunuyor. Projenin yapısal bütünlüğünü ve güvenliğini merkezine alan firmamız; kaba inşaat sürecinde en güncel mühendislik tekniklerini ve yüksek mukavemetli yapı malzemelerini kullanmıştır. Estetik detayların ötesinde, uzun ömürlü ve depreme dayanıklı bir temel atma sorumluluğuyla hareket ederek, projenin modern mimari çizgisine sağlam bir iskelet kazandırdık.",
     stats: [
-      { label: "Arsa Alanı", value: "10.680 m²", icon: Ruler }, 
+      { label: "İnşaat Alanı", value: "10.680 m²", icon: Ruler }, 
       { label: "Blok Sayısı", value: "8 Blok", icon: Building },
       { label: "Daire Sayısı", value: "40 Daire", icon: Home }
     ],

@@ -14,7 +14,7 @@ const Merkezefendi: React.FC = () => {
     mainImage: "/projects/merkez-efendi-konaklari.jpg",
     description: "3 dönümlük bir arazi üzerinde konumlanan bu proje; 16 seçkin daire ve 7 ticari üniteden oluşan, modern yaşamın tüm gereksinimlerine yanıt veren prestijli bir konsepttir. Hayallerin hedefe, hedeflerin ise gerçeğe dönüştüğü bu projede; statü ve şıklığı bir araya getiren bir atmosfer tasarlanmıştır. Kaba inşaat sürecinde, projenin bu vizyoner kimliğini taşıyacak yüksek mukavemetli taşıyıcı sistemler ve ileri mühendislik teknikleri kullanılmıştır. Estetik detayların ardında yatan depreme dayanıklı iskelet yapısını, yapısal bütünlüğü ve güvenliği ön planda tutarak titizlikle inşa ettik. Modern yaşamın şık atmosferine, sağlam bir temel ve uzman bir mühendislik disipliniyle hayat verdik.",
     stats: [
-      { label: "Arsa Alanı", value: "3.000 m²", icon: Ruler },
+      { label: "İnşaat Alanı", value: "3.000 m²", icon: Ruler },
       { label: "Daire Sayısı", value: "16 Daire", icon: Home },
       { label: "Dükkan Sayısı", value: "7 Dükkan", icon: Home }
     ],

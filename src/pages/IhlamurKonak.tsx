@@ -14,7 +14,7 @@ const IhlamurKonak: React.FC = () => {
     mainImage: "/projects/florya-ihlamur-konaklari.jpg",
     description: "Ihlamur Konakları, 11 dönümlük arazi üzerinde 11 blok ve 73 bağımsız bölümden oluşan, doğayla iç içe yatay bir mimari projesidir. Projenin 8.000 m²’lik peyzaj alanına sahip geniş yerleşimi, kaba inşaat sürecimizde yüksek mühendislik standartlarıyla birleştirilmiştir. Depreme dayanıklı taşıyıcı sistem tasarımı ve ileri inşaat teknikleri kullanarak, modern yaşamın estetiğine sağlam bir zemin hazırladık. Kaba inşaatın her aşamasında kalite ve güvenliği ön planda tutarak, projenin yapısal bütünlüğünü titizlikle inşa ettik.",
     stats: [
-      { label: "Arsa Alanı", value: "11.000 m²", icon: Ruler },
+      { label: "İnşaat Alanı", value: "11.000 m²", icon: Ruler },
       { label: "Blok Sayısı", value: "11 Blok", icon: Building },
       { label: "Daire Sayısı", value: "73 Daire", icon: Home }
     ],
