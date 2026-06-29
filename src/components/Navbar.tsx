@@ -34,27 +34,19 @@ const Navbar = () => {
         { name: 'Hakkımızda', path: '/kurumsal/hakkimizda' },
         { name: 'Yönetim Kurulu', path: '/kurumsal/yonetim-kurulu' },
         { name: 'Kişisel Verilerin Korunması', path: '/kurumsal/kvkk' },
+        // İş Başvuru Formu buraya taşındı
+        { name: 'İş Başvuru Formu', path: '/ik/basvuru' }, 
       ]
     },
-    // GÜNCELLENEN KISIM: Projeler Alt Menüsü
     { 
       name: 'Projeler', 
       path: '/projeler',
       submenu: [
-        { name: 'Kaba İnşaat Projelerimiz', path: 'projeler/kaba-insaat' },
-        { name: 'Projelerimiz', path: 'projeler/projelerimiz' },
+        { name: 'Kaba İnşaat Projelerimiz', path: '/projeler/kaba-insaat' },
+        { name: 'Projelerimiz', path: '/projeler/projelerimiz' },
       ]
     },
-    { 
-      name: 'İnsan Kaynakları', 
-      path: '/insan-kaynaklari',
-      submenu: [
-        { name: 'İK Politikası', path: '/ik/politika' },
-        { name: 'İş Başvuru Formu', path: '/ik/basvuru' },
-        { name: 'Çalışan Adayı Aydınlatma Metni', path: '/ik/aydinlatma-metni' },
-      ]
-    },
-    { name: 'Haberler', path: '/haberler' },
+    // İnsan Kaynakları ve Haberler silindi
     { name: 'İletişim', path: '/iletisim' },
   ];
 

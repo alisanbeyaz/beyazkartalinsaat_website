@@ -7,7 +7,6 @@ const Contact: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-
   const googleMapsLink = "https://www.google.com/maps/place/Metropol+C1+Business+Center/@40.9941115,29.1171459,657m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14cac9003507d12b:0xfd457a6c64960e4e!8m2!3d40.9941115!4d29.1197208!16s%2Fg%2F11vq2chjsb?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D";
 
   return (
@@ -18,7 +17,7 @@ const Contact: React.FC = () => {
           {/* ÜST BAŞLIK BÖLÜMÜ */}
           <div className="mb-16">
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight uppercase">İletişim</h1>
-            <div className="w-20 h-1 bg-slate-900 mb-8"></div>
+            <div className="w-20 h-1 bg-[#123D71] mb-8"></div>
             <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
               Projelerimiz, müteahhitlik hizmetlerimiz veya genel sorularınız için bizimle iletişime geçin. Bize ulaşın, inşa edelim.
             </p>
@@ -30,13 +29,13 @@ const Contact: React.FC = () => {
             {/* SOL TARAF: İletişim Kartları ve Küçük Harita (4 Sütun) */}
             <div className="lg:col-span-4 flex flex-col gap-6">
               
-              {/* Merkez Ofis Kartı (Karanlık Tema) */}
-              <div className="bg-slate-900 text-white p-8 border border-slate-800 flex flex-col group hover:bg-slate-800 transition-colors shadow-sm">
+              {/* Merkez Ofis Kartı (Marka Laciverti) */}
+              <div className="bg-[#123D71] text-white p-8 border border-[#0d2d53] flex flex-col group hover:bg-[#0f3460] transition-colors shadow-sm">
                 <div>
                   <Building2 size={32} className="text-amber-500 mb-6" />
                   <h3 className="text-lg font-bold uppercase tracking-widest mb-4">Merkez Ofis</h3>
-                  <div className="w-8 h-px bg-slate-700 mb-4"></div>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <div className="w-8 h-px bg-white/20 mb-4"></div>
+                  <p className="text-blue-100 text-sm leading-relaxed">
                     Atatürk Mah. Ertuğrul Gazi Sk.<br />
                     Metropol İstanbul C1 Blok<br />
                     No: 2B İç Kapı No: 101<br />
@@ -45,12 +44,12 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              {/* Telefon ve Mail Kartları (Yan Yana veya Alt Alta) */}
+              {/* Telefon ve Mail Kartları */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
                 
-                <div className="bg-white p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-slate-900 group transition-colors">
-                  <div className="bg-slate-100 p-3 group-hover:bg-slate-900 group-hover:text-white transition-colors">
-                    <Phone size={20} className="text-slate-900 group-hover:text-white transition-colors" />
+                <div className="bg-white p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-[#123D71] group transition-colors">
+                  <div className="bg-slate-100 p-3 group-hover:bg-[#123D71] group-hover:text-white transition-colors">
+                    <Phone size={20} className="text-[#123D71] group-hover:text-white transition-colors" />
                   </div>
                   <div className="pt-1">
                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Telefon</p>
@@ -59,9 +58,9 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="bg-white p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-slate-900 group transition-colors">
-                  <div className="bg-slate-100 p-3 group-hover:bg-slate-900 group-hover:text-white transition-colors">
-                    <Mail size={20} className="text-slate-900 group-hover:text-white transition-colors" />
+                <div className="bg-white p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-[#123D71] group transition-colors">
+                  <div className="bg-slate-100 p-3 group-hover:bg-[#123D71] group-hover:text-white transition-colors">
+                    <Mail size={20} className="text-[#123D71] group-hover:text-white transition-colors" />
                   </div>
                   <div className="pt-1">
                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">E-Posta</p>
@@ -84,10 +83,10 @@ const Contact: React.FC = () => {
                   style={{ backgroundImage: "url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop')" }}
                 />
                 
-                {/* Pin ve Overlay */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/10 group-hover:bg-slate-900/40 transition-colors duration-500">
+                {/* Pin ve Overlay (Hover'da Marka Laciverti) */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#123D71]/10 group-hover:bg-[#123D71]/40 transition-colors duration-500">
                   
-                  <div className="bg-slate-900 text-white p-3 rounded-full shadow-2xl transform group-hover:-translate-y-3 transition-transform duration-500 relative z-10">
+                  <div className="bg-[#123D71] text-white p-3 rounded-full shadow-2xl transform group-hover:-translate-y-3 transition-transform duration-500 relative z-10">
                     <MapPin size={28} />
                     {/* Pin Altı Gölge Efekti */}
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-1 bg-black/40 blur-sm rounded-full"></div>
@@ -114,14 +113,14 @@ const Contact: React.FC = () => {
                     <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Adınız</label>
                     <input 
                       type="text" 
-                      className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-slate-900 focus:bg-white transition-colors" 
+                      className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-[#123D71] focus:bg-white transition-colors" 
                     />
                   </div>
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Soyadınız</label>
                     <input 
                       type="text" 
-                      className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-slate-900 focus:bg-white transition-colors" 
+                      className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-[#123D71] focus:bg-white transition-colors" 
                     />
                   </div>
                 </div>
@@ -130,7 +129,7 @@ const Contact: React.FC = () => {
                   <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">E-Posta Adresiniz</label>
                   <input 
                     type="email" 
-                    className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-slate-900 focus:bg-white transition-colors" 
+                    className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-[#123D71] focus:bg-white transition-colors" 
                   />
                 </div>
 
@@ -138,13 +137,13 @@ const Contact: React.FC = () => {
                   <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Mesajınız</label>
                   <textarea 
                     rows={6} 
-                    className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-slate-900 focus:bg-white transition-colors resize-none"
+                    className="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-[#123D71] focus:bg-white transition-colors resize-none"
                   ></textarea>
                 </div>
 
                 <button 
                   type="button" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors w-full md:w-auto mt-4 group"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[#123D71] text-white text-xs font-bold uppercase tracking-widest hover:bg-[#0f3460] transition-colors w-full md:w-auto mt-4 group"
                 >
                   Mesajı Gönder
                   <Send size={16} className="ml-3 transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />

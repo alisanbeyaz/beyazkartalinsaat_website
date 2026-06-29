@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Brand Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-left">
             <h3 className="text-3xl font-bold text-white mb-6 font-serif tracking-tight">Beyaz Kartal</h3>
             <p className="text-silver leading-relaxed font-light">
               Modern yaşam alanları inşa ederek geleceği şekillendiriyoruz. Güven, kalite ve estetik anlayışımızla sektörde fark yaratıyoruz.
@@ -22,22 +22,21 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-left">
             <h4 className="text-xl font-semibold text-white mb-8 font-serif">Hızlı Erişim</h4>
             <ul className="space-y-4">
-              <li><Link to="/kurumsal" className="text-silver hover:text-primary transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Hakkımızda</Link></li>
-              <li><Link to="/projeler" className="text-silver hover:text-primary transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Projelerimiz</Link></li>
-              <li><Link to="/haberler" className="text-silver hover:text-primary transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Haberler</Link></li>
-              <li><Link to="/iletisim" className="text-silver hover:text-primary transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>İletişim</Link></li>
-              <li><Link to="/ik/basvuru" className="text-silver hover:text-primary transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Kariyer</Link></li>
+              <li><Link to="/kurumsal" className="text-silver hover:text-primary transition-colors flex items-center justify-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Hakkımızda</Link></li>
+              <li><Link to="/projeler" className="text-silver hover:text-primary transition-colors flex items-center justify-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Projelerimiz</Link></li>
+              <li><Link to="/iletisim" className="text-silver hover:text-primary transition-colors flex items-center justify-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>İletişim</Link></li>
+              <li><Link to="/kurumsal/is-basvurusu" className="text-silver hover:text-primary transition-colors flex items-center justify-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Kariyer</Link></li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-left">
             <h4 className="text-xl font-semibold text-white mb-8 font-serif">İletişim</h4>
             <ul className="space-y-6">
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-start justify-start gap-4 group">
                 <div className="bg-navy-800 p-3 rounded-md text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -46,7 +45,7 @@ const Footer = () => {
                   <span className="text-silver text-sm">Atatürk Mah. Ertuğrul Gazi Sk. Metropol İstanbul C1 BLOK NO: 2B İÇ KAPI NO: 101 ATAŞEHİR/İSTANBUL</span>
                 </div>
               </li>
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-start justify-start gap-4 group">
                  <div className="bg-navy-800 p-3 rounded-md text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <Phone className="w-5 h-5" />
                 </div>
@@ -55,7 +54,7 @@ const Footer = () => {
                   <span className="text-silver text-sm">+90 (212) 555 00 00</span>
                 </div>
               </li>
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-start justify-start gap-4 group">
                  <div className="bg-navy-800 p-3 rounded-md text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <Mail className="w-5 h-5" />
                 </div>
@@ -68,7 +67,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className="text-left">
             <h4 className="text-xl font-semibold text-white mb-8 font-serif">Bülten</h4>
             <p className="text-sm text-silver mb-6 leading-relaxed">
               Yeni projelerimiz, lansman fırsatları ve duyurulardan haberdar olmak için e-bültenimize kayıt olun.
@@ -86,10 +85,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-navy-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-navy-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-silver">© 2025 Beyaz Kartal İnşaat. Tüm hakları saklıdır.</p>
-          <div className="flex gap-6 text-silver">
-             <Link to="/kvkk" className="hover:text-white transition-colors">KVKK</Link>
+          <div className="flex flex-wrap justify-center md:justify-end gap-6 text-silver">
+             <Link to="/kurumsal/kvkk" className="hover:text-white transition-colors">KVKK</Link>
              <Link to="/cerez-politikasi" className="hover:text-white transition-colors">Çerez Politikası</Link>
              <Link to="/kullanim-kosullari" className="hover:text-white transition-colors">Kullanım Koşulları</Link>
           </div>
