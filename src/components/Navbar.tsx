@@ -35,7 +35,7 @@ const Navbar = () => {
         { name: 'Yönetim Kurulu', path: '/kurumsal/yonetim-kurulu' },
         { name: 'Kişisel Verilerin Korunması', path: '/kurumsal/kvkk' },
         // İş Başvuru Formu buraya taşındı
-        { name: 'İş Başvuru Formu', path: '/ik/basvuru' }, 
+        { name: 'İş Başvuru Formu', path: '/kurumsal/is-basvurusu' }, 
       ]
     },
     { 
