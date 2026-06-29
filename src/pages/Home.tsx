@@ -233,32 +233,39 @@ const Home = () => {
       <section className="py-24 bg-white relative z-10">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
-            <Reveal className="lg:w-1/3 text-center lg:text-left flex flex-col items-center lg:items-start">
-              <h2 className="text-[120px] md:text-[160px] font-light text-zinc-900 leading-none tracking-tighter">
-                40
-              </h2>
-              <p className="text-sm md:text-base uppercase tracking-[0.4em] text-gray-500 font-medium mt-2 ml-2">
-                Yıllık Tecrübe
-              </p>
+            
+            {/* DÜZELTME: className Reveal'dan alınıp içindeki div'e eklendi */}
+            <Reveal>
+              <div className="lg:w-1/3 text-center lg:text-left flex flex-col items-center lg:items-start">
+                <h2 className="text-[120px] md:text-[160px] font-light text-zinc-900 leading-none tracking-tighter">
+                  40
+                </h2>
+                <p className="text-sm md:text-base uppercase tracking-[0.4em] text-gray-500 font-medium mt-2 ml-2">
+                  Yıllık Tecrübe
+                </p>
+              </div>
             </Reveal>
 
-            <Reveal delay={0.2} className="lg:w-2/3">
+            {/* DÜZELTME: className Reveal'dan alınıp içindeki div'e eklendi */}
+            <Reveal delay={0.2}>
+              <div className="lg:w-2/3">
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-light text-zinc-900 mb-6 leading-relaxed tracking-wide">
                   Yarım asra yaklaşan tecrübemizle sadece binalar değil, <br className="hidden md:block"/> 
                   <span className="font-medium">nesiller boyu sürecek güven inşa ediyoruz.</span>
                 </h3>
-              <p className="text-gray-500 font-light leading-relaxed text-sm md:text-base mb-8 max-w-2xl">
-                Estetik ve mühendisliği kusursuz bir dengeyle bir araya getiriyoruz. Her projemizde, modern yaşamın gereksinimlerini karşılarken, doğaya saygılı ve şehrin silüetine değer katan kalıcı eserler bırakmayı hedefliyoruz.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 pt-6 border-t border-gray-100">
-                <div>
-                  <span className="block text-zinc-900 font-medium mb-1 uppercase tracking-wider text-xs">Premium Lokasyon</span>
-                  <span className="text-sm text-gray-500 font-light">Özenle seçilmiş, değerlenen araziler</span>
-                </div>
-                <div>
-                  <span className="block text-zinc-900 font-medium mb-1 uppercase tracking-wider text-xs">Tavizsiz Sağlamlık</span>
-                  <span className="text-sm text-gray-500 font-light">Estetiğin ardındaki sarsılmaz güç</span>
+                <p className="text-gray-500 font-light leading-relaxed text-sm md:text-base mb-8 max-w-2xl">
+                  Estetik ve mühendisliği kusursuz bir dengeyle bir araya getiriyoruz. Her projemizde, modern yaşamın gereksinimlerini karşılarken, doğaya saygılı ve şehrin silüetine değer katan kalıcı eserler bırakmayı hedefliyoruz.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 pt-6 border-t border-gray-100">
+                  <div>
+                    <span className="block text-zinc-900 font-medium mb-1 uppercase tracking-wider text-xs">Premium Lokasyon</span>
+                    <span className="text-sm text-gray-500 font-light">Özenle seçilmiş, değerlenen araziler</span>
+                  </div>
+                  <div>
+                    <span className="block text-zinc-900 font-medium mb-1 uppercase tracking-wider text-xs">Tavizsiz Sağlamlık</span>
+                    <span className="text-sm text-gray-500 font-light">Estetiğin ardındaki sarsılmaz güç</span>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -321,17 +328,23 @@ const Home = () => {
       <section className="relative py-32 bg-zinc-50 border-t border-gray-200 text-zinc-900">
         <div className="container mx-auto px-4 max-w-4xl text-center relative z-10 flex flex-col items-center justify-center">
           
-          <Reveal className="w-full flex justify-center">
-            <h2 className="text-2xl md:text-4xl font-light leading-relaxed tracking-wide mb-10 text-zinc-800 text-center max-w-3xl">
-              "İyi mimari sadece estetik binalar dikmek değil; içinde yaşayanların hayat kalitesini artıran, güvenli, huzurlu ve nesiller boyu ayakta kalacak yaşam alanları inşa etmektir."
-            </h2>
+          {/* DÜZELTME: className Reveal'dan alınıp içindeki div'e eklendi */}
+          <Reveal>
+            <div className="w-full flex justify-center">
+              <h2 className="text-2xl md:text-4xl font-light leading-relaxed tracking-wide mb-10 text-zinc-800 text-center max-w-3xl">
+                "İyi mimari sadece estetik binalar dikmek değil; içinde yaşayanların hayat kalitesini artıran, güvenli, huzurlu ve nesiller boyu ayakta kalacak yaşam alanları inşa etmektir."
+              </h2>
+            </div>
           </Reveal>
           
-          <Reveal delay={0.2} className="w-full flex justify-center">
-            <Link to="/kurumsal/hakkimizda" className="group inline-flex items-center gap-4 text-xs uppercase tracking-widest text-zinc-900 font-medium border-b border-zinc-900 pb-2 hover:text-zinc-500 hover:border-zinc-500 transition-colors mx-auto">
-              Hakkımızda
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+          {/* DÜZELTME: className Reveal'dan alınıp içindeki div'e eklendi */}
+          <Reveal delay={0.2}>
+            <div className="w-full flex justify-center">
+              <Link to="/kurumsal/hakkimizda" className="group inline-flex items-center gap-4 text-xs uppercase tracking-widest text-zinc-900 font-medium border-b border-zinc-900 pb-2 hover:text-zinc-500 hover:border-zinc-500 transition-colors mx-auto">
+                Hakkımızda
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </Reveal>
 
         </div>
