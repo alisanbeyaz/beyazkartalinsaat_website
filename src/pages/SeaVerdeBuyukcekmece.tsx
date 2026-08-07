@@ -4,18 +4,18 @@ import { PageTransition } from '../components/Layout';
 import { Calendar, Ruler, Building, MapPin, ArrowLeft, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import ProjectMap from '../components/ProjectMap';
 
-const AureliaBuyukcekmece: React.FC = () => {
+const SeaVerdeBuyukcekmece: React.FC = () => {
   const navigate = useNavigate();
   
   // Lightbox için state'ler
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const project = {
-    title: "AURELIA Büyükçekmece",
+    title: "Sea Verde Büyükçekmece",
     location: "Büyükçekmece, İstanbul",
     status: "Devam Ediyor",
     mainImage: "/projects/Büyükcekmece.png",
-    description: "Büyükçekmece’nin seçkin lokasyonunda, 394 m² arsa üzerinde yükselen AURELIA Büyükçekmece; toplam 600 m² inşaat alanına sahip 2 özel villadan oluşan butik ve prestijli bir yaşam projesidir. Bu özel yapının müteahhitliğini üstlenen firmamız; modern mimarinin estetik beklentilerini, yüksek mühendislik standartları ve ileri inşaat teknolojileriyle hayata geçirmiştir. Projenin temelinden teslimine kadar olan tüm yapım sürecinde; depreme dayanıklı taşıyıcı sistemler, yapısal güvenlik ve birinci sınıf işçilik kalitesi ön planda tutulmuştur. Temmuz ayında başlayıp Aralık ayında hızla ve eksiksiz tamamlanacak şekilde yönettiğimiz disiplinli çalışma takvimimizle, AURELIA Büyükçekmece'ye sağlam, güvenli ve uzun ömürlü bir yapı kimliği kazandırdık.",
+    description: "Büyükçekmece’nin seçkin lokasyonunda, 394 m² arsa üzerinde yükselen Sea Verde Büyükçekmece; toplam 600 m² inşaat alanına sahip 2 özel villadan oluşan butik ve prestijli bir yaşam projesidir. Bu özel yapının müteahhitliğini üstlenen firmamız; modern mimarinin estetik beklentilerini, yüksek mühendislik standartları ve ileri inşaat teknolojileriyle hayata geçirmiştir. Projenin temelinden teslimine kadar olan tüm yapım sürecinde; depreme dayanıklı taşıyıcı sistemler, yapısal güvenlik ve birinci sınıf işçilik kalitesi ön planda tutulmuştur. Temmuz ayında başlayıp Aralık ayında hızla ve eksiksiz tamamlanacak şekilde yönettiğimiz disiplinli çalışma takvimimizle, Sea Verde Büyükçekmece'ye sağlam, güvenli ve uzun ömürlü bir yapı kimliği kazandırdık.",
     stats: [
       { label: "İnşaat Alanı", value: "600 m²", icon: Ruler },
       { label: "Arsa Alanı", value: "394 m²", icon: MapPin},
@@ -228,4 +228,4 @@ const AureliaBuyukcekmece: React.FC = () => {
   );
 };
 
-export default AureliaBuyukcekmece;
+export default SeaVerdeBuyukcekmece;

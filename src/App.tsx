@@ -23,7 +23,7 @@ import BeyazPlazaBeykent from './pages/BeyazPlazaBeykent';
 import MaraFlorya from './pages/MaraFlorya';
 import KabaInsaat from './pages/KabaInsaat';
 import OurProjects from './pages/OurProjects';
-import AureliaBuyukcekmece from './pages/AureliaBuyukcekmece';
+import SeaVerdeBuyukcekmece from './pages/SeaVerdeBuyukcekmece';
 
 
 function App() {
@@ -71,7 +71,7 @@ function App() {
           <Route path="/projeler/merkezefendi-konaklari" element={<Merkezefendi />} />
           <Route path="/projeler/beyazplaza-beykent" element={<BeyazPlazaBeykent />} />
           <Route path="/projeler/mara-florya" element={<MaraFlorya />} />
-          <Route path="/projeler/buyukcekmece-villa" element={<AureliaBuyukcekmece />} />
+          <Route path="/projeler/buyukcekmece-villa" element={<SeaVerdeBuyukcekmece />} />
           
           {/* İletişim */}
           <Route path="/iletisim" element={<Contact />} />
