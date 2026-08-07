@@ -9,7 +9,7 @@ const OurProjects = () => {
   const ongoingProjects = [
     { 
       _id: "8", 
-      title: "Sea Verde Büyükçekmece", 
+      title: "SEA VERDE Büyükçekmece", 
       location: "Büyükçekmece, İstanbul", 
       status: "devam-eden", 
       description: "Modern mimariyle tasarlanmış, doğa ile iç içe lüks villa projesi.", 
