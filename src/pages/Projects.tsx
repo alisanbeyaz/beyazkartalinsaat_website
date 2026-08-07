@@ -12,7 +12,7 @@ const myProjects = [
   { _id: "5", title: "Merkezefendi Konakları", location: "Zeytinburnu, İstanbul", status: "tamamlanan", description: "Geleneksel aile yaşamına uygun, geniş yeşil alanlara sahip huzurlu konaklar.", image: "/projects/merkez-efendi-konaklari.jpg", slug: "merkezefendi-konaklari" },
   { _id: "6", title: "Beyaz Plaza Beykent", location: "Beykent, İstanbul", status: "tamamlanan", description: "Bölgenin yeni ticari kalbi olan modern ve donanımlı iş merkezi projemiz.", image: "/projects/beyazplaza-beykent.jpg", slug: "beyazplaza-beykent" },
   { _id: "7", title: "Mara Florya", location: "Florya, İstanbul", status: "tamamlanan", description: "Florya'nın prestijine yakışır, ultra lüks detaylarla donatılmış özel yaşam alanı.", image: "/projects/mara-florya.jpg", slug: "mara-florya" },
-  { _id: "8", title: "Sea Verde Büyükçekmece", location: "Büyükçekmece, İstanbul", status: "devam-eden", description: "Modern mimariyle tasarlanmış, doğa ile iç içe lüks villa projesi.", image: "/projects/Büyükcekmece.png", slug: "buyukcekmece-villa" }
+  { _id: "8", title: "SEA VERDE Büyükçekmece", location: "Büyükçekmece, İstanbul", status: "devam-eden", description: "Modern mimariyle tasarlanmış, doğa ile iç içe lüks villa projesi.", image: "/projects/Büyükcekmece.png", slug: "buyukcekmece-villa" }
 ];
 
 const Projects = () => {
